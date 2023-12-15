@@ -1,0 +1,26 @@
+/* cart.component.scss */
+.cart-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .product-name {
+    font-weight: bold;
+  }
+  
+  .product-price {
+    color: #007bff; /* Blue color for the price */
+  }
+  
+  .remove-button {
+    background-color: #dc3545; /* Red color for the remove button */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,18 @@
+<!-- src/app/components/product-list/product-list.component.html -->
+<div class="product-list">
+    <div *ngFor="let product of products" class="product-item">
+      <img [src]="product.imageUrl" alt="{{ product.name }}">
+      <h3>{{ product.name }}</h3>
+      <p>{{ product.price | currency }}</p>
+      <button (click)="viewProductDetails(product)">Show Details</button>
+    </div>
+  </div>
+<!-- <div class="product-list">
+    <div *ngFor="let product of products" class="product-item">
+      <img [src]="product.imageUrl" alt="{{ product.name }}">
+      <h3>{{ product.name }}</h3>
+      <p>Price: ${{ product.price }}</p>
+      <button (click)="viewProductDetails(product)">View Details</button>
+    </div>
+  </div> -->
+  
