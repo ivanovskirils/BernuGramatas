@@ -1,7 +1,36 @@
-/* product-detail.component.scss */
-.cart-icon {
-    display: inline-block;
-    font-size: 24px;
-    /* Add any other styles you want */
+/* src/app/components/product-detail/product-detail.component.scss */
+.product-detail {
+    text-align: center;
+    padding: 1em;
   }
+  
+  .product-detail img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+  }
+  
+  .product-detail .product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .product-detail p {
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-bottom: 1em;
+  }
+  
+  /* src/app/components/product-detail/product-detail.component.scss */
+.product-detail button {
+    min-height: 44px;
+    width: 20%; /* Adjust the width as needed */
+  }
+  
+  .product-detail button:hover {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
   
