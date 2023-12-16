@@ -17,14 +17,20 @@
   }
   
   .product-detail p {
-    font-size: 18px; /* Adjust the font size as needed */
+    //font-size: 18px; /* Adjust the font size as needed */
     margin-bottom: 1em;
   }
   
   /* src/app/components/product-detail/product-detail.component.scss */
-.product-detail button {
-    min-height: 44px;
-    width: 20%; /* Adjust the width as needed */
+  .product-detail button {
+    min-height: 48px;
+    width: 30%; /* Adjust the width for responsiveness */
+    border: 3px solid #4CAF50;
+    background-color: transparent;
+    color: #4CAF50;
+    font-size: 20px; /* Adjust the font size as needed */
+    border-radius: 20px; /* Make the edges round */
+    margin-top: 1em; /* Add margin at the top for spacing */
   }
   
   .product-detail button:hover {
@@ -32,5 +38,4 @@
     color: white;
     cursor: pointer;
   }
-  
   
