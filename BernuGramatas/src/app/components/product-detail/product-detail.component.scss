@@ -1,41 +1,38 @@
-/* src/app/components/product-detail/product-detail.component.scss */
 .product-detail {
-    text-align: center;
-    padding: 1em;
-  }
-  
-  .product-detail img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1em;
-  }
-  
-  .product-detail .product-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .product-detail p {
-    //font-size: 18px; /* Adjust the font size as needed */
-    margin-bottom: 1em;
-  }
-  
-  /* src/app/components/product-detail/product-detail.component.scss */
-  .product-detail button {
-    min-height: 48px;
-    width: 30%; /* Adjust the width for responsiveness */
-    border: 3px solid #4CAF50;
-    background-color: transparent;
-    color: #4CAF50;
-    font-size: 20px; /* Adjust the font size as needed */
-    border-radius: 20px; /* Make the edges round */
-    margin-top: 1em; /* Add margin at the top for spacing */
-  }
-  
-  .product-detail button:hover {
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-  }
-  
+  text-align: center;
+  padding: 1em;
+}
+
+.product-detail img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+.product-detail .product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-detail p {
+  font-size: 16px; /* Adjusted font size */
+  margin-bottom: 1em;
+}
+
+.product-detail button {
+  min-height: 44px; /* Adjusted button height */
+  width: 40%; /* Adjust the width for responsiveness */
+  border: 3px solid #4CAF50;
+  background-color: transparent;
+  color: #4CAF50;
+  font-size: 18px; /* Adjusted font size */
+  border-radius: 20px;
+  margin-top: 1em;
+}
+
+.product-detail button:hover {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}

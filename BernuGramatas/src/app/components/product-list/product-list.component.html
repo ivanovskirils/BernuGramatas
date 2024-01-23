@@ -1,12 +1,14 @@
 <!-- src/app/components/product-list/product-list.component.html -->
 <div class="product-list">
-    <div *ngFor="let product of products" class="product-item">
-      <img [src]="product.imageUrl" alt="{{ product.name }}">
+  <div *ngFor="let product of products" class="product-item">
+    <img [src]="product.imageUrl" alt="{{ product.name }}" (click)="viewProductDetails(product)">
+    <div class="product-info" (click)="$event.stopPropagation()">
       <h3>{{ product.name }}</h3>
       <p>{{ product.price | currency }}</p>
-      <button (click)="viewProductDetails(product)">Show Details</button>
+      <button (click)="addToCart(product)">Uz grozu</button>
     </div>
   </div>
+</div>
 <!-- <div class="product-list">
     <div *ngFor="let product of products" class="product-item">
       <img [src]="product.imageUrl" alt="{{ product.name }}">
