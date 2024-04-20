@@ -11,6 +11,7 @@ import { CartService } from '../../services/cart.service';
 })
 export class ProductDetailComponent implements OnInit {
   product: any;
+  quantity: number = 1; // Initialize quantity property
 
   constructor(
     private route: ActivatedRoute,
@@ -28,8 +29,20 @@ export class ProductDetailComponent implements OnInit {
     });
   }
 
+  decreaseQuantity(): void {
+    if (this.quantity > 1) {
+      this.quantity--;
+    }
+  }
+  
+  increaseQuantity(): void {
+    this.quantity++;
+  }
+
   addToCart(product: any): void {
+    // Add product to cart
     this.cartService.addToCart(product);
     console.log('Added to cart:', product);
   }
+  
 }

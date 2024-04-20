@@ -1,20 +1,52 @@
 /* src/app/components/navbar/navbar.component.scss */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #f0f0f0; /* Add your desired background color */
-  }
-  
-  .logo {
-    font-size: 20px;
-  }
-  
 
-  
-  .cart {
-    font-size: 18px;
-    cursor: pointer;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: transparent;
+}
+
+.logo {
+  a {
+    display: flex;
+    align-items: center; /* Align items vertically */
   }
-  
+
+  img {
+    width: 250px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    border-radius: 50%; /* Make the image circular */
+    overflow: hidden; /* Ensure the image stays within the circular boundary */
+  }
+}
+
+/* src/app/components/navbar/navbar.component.scss */
+
+.cart {
+  position: relative; /* Ensure the position of the container is relative */
+  width: 44px; /* Set the width */
+  height: 44px; /* Set the height */
+}
+
+.cart img {
+  width: 100%; /* Ensure the cart image fills the container */
+  height: 100%; /* Ensure the cart image fills the container */
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+.cart .count {
+  position: absolute; /* Position the count absolutely */
+  top: -8px; /* Adjust the top position */
+  right: -8px; /* Adjust the right position */
+  width: 20px; /* Set the width of the count circle */
+  height: 20px; /* Set the height of the count circle */
+  background-color: red; /* Set the background color of the count circle */
+  border-radius: 50%; /* Make the count circle circular */
+  color: white; /* Set the text color */
+  font-size: 12px; /* Set the font size */
+  display: flex; /* Enable flexbox */
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Align items horizontally */
+}

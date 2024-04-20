@@ -1,11 +1,15 @@
 <!-- src/app/components/product-detail/product-detail.component.html -->
 <div *ngIf="product" class="product-detail">
-    <h2>{{ product.name }}</h2>
-    <img [src]="product.imageUrl" alt="{{ product.name }}">
-    <div class="product-info">
+  <h2>{{ product.name }}</h2>
+  <img [src]="product.imageUrl" alt="{{ product.name }}">
+  <div class="product-info">
       <p>{{ product.description }}</p>
-      <p>Price: ${{ product.price }}</p>
-      <button (click)="addToCart(product)">Uz grozu</button>
+      <p class="price">Price: {{ product.price }} €</p>
+      <div class="quantity">
+        <button (click)="decreaseQuantity()">-</button>
+        <input type="text" [(ngModel)]="quantity">
+        <button (click)="increaseQuantity()">+</button>
+      </div>
+      <button (click)="addToCart(product)">Pievienot grozam</button>
     </div>
-  </div>
-  
+</div>

@@ -1,31 +1,42 @@
 [
-    {
-      "id": 1,
-      "name": "Product 1",
-      "description": "Description for Product 1",
-      "price": 19.99,
-      "imageUrl": "https://t4.ftcdn.net/jpg/00/59/96/75/360_F_59967553_9g2bvhTZf18zCmEVWcKigEoevGzFqXzq.jpg"
-    },
-    {
-      "id": 2,
-      "name": "Product 2",
-      "description": "Description for Product 2",
-      "price": 29.99,
-      "imageUrl": "https://media.istockphoto.com/id/466175630/photo/tomato-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=ELzCVzaiRMgiO7A5zQLkuws0N_lvPxrgJWPn7C7BXz0="
-    },
-    {
-      "id": 3,
-      "name": "Product 3",
-      "description": "Description for Product 3",
-      "price": 39.99,
-      "imageUrl": "https://media.istockphoto.com/id/1406047398/photo/lemon-with-leaf-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=WIwBPye17pFzllBxa4qRvwprxFTAS5S3nJyDvmm49ok="
-    },
-    {
-        "id": 4,
-        "name": "Product 4",
-        "description": "Description for Product 3",
-        "price": 49.99,
-        "imageUrl": "https://media.istockphoto.com/id/185284489/photo/orange.jpg?s=612x612&w=0&k=20&c=m4EXknC74i2aYWCbjxbzZ6EtRaJkdSJNtekh4m1PspE="
-      }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Grāmata ar lipekļiem \"Leļļu garderobe\"",
+    "description": "Description for Product 1",
+    "price": "19,99",
+    "imageUrl": "/assets/lellu_garderobe.png",
+    "category": "velcro",
+    "logoUrl": "/assets/category_draw.png",
+    "workingDaysForDelivery": 7
+  },
+  {
+    "id": 2,
+    "name": "Izglītojošas laminētās kartītes. Palīdz attīstīt runu!",
+    "description": "Description for Product 2",
+    "price": "29,99",
+    "imageUrl": "/assets/cards_1.png",
+    "category": "cards",
+    "logoUrl": "/assets/category_cards.png",
+    "workingDaysForDelivery": 7
+  },
+  {
+    "id": 3,
+    "name": "A4 formāta grāmata ar lipekļiem",
+    "description": "Description for Product 3",
+    "price": "39,99",
+    "imageUrl": "/assets/velcro_big_1.png",
+    "category": "velcro",
+    "logoUrl": "/assets/category_velcro.png",
+    "workingDaysForDelivery": 7
+  },
+  {
+    "id": 4,
+    "name": "Raksti un dzēs ✏️ grāmata “MIX” (16 dažādās spēlēs)",
+    "description": "Description for Product 4",
+    "price": "49,99",
+    "imageUrl": "/assets/draw_1.png",
+    "category": "draw",
+    "logoUrl": "/assets/category_draw.png",
+    "workingDaysForDelivery": 7
+  }
+]

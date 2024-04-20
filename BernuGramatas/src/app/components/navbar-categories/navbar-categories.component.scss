@@ -1,0 +1,59 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  border-bottom: 1px solid #dfe3e8;
+  padding: 10px 0;
+  min-height: 42px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.category-logo {
+  width: 70px;
+  height: 120px;
+  margin-right: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: #212b36;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 10px 15px;
+  display: inline-block;
+  position: relative;
+  transition: color 0.3s ease;
+
+}
+
+a:hover {
+  color: #eea796;
+}
+
+a.active {
+  font-weight: bold; /* Make the text bold for the active category */
+  position: relative; /* Position relative for absolute positioning of the line */
+}
+
+a.active::after {
+  content: ''; /* Create a pseudo-element for the line */
+  position: absolute; /* Position the line relative to the active category tab */
+  left: 0; /* Align the line with the left edge of the tab */
+  bottom: -3px; /* Position the line just below the tab */
+  width: 100%; /* Set the width of the line to match the tab */
+  height: 2px; /* Set the height of the line */
+  background-color: #eea796; /* Set the color of the line */
+}
+
+
+:host {
+  border-bottom: 0.1px solid #dfe3e8;
+  display: block;
+  margin-bottom: 10px;
+}
