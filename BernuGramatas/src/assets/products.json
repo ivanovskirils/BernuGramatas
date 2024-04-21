@@ -38,5 +38,45 @@
     "category": "draw",
     "logoUrl": "/assets/category_draw.png",
     "workingDaysForDelivery": 7
+  },
+  {
+    "id": 5,
+    "name": "Grāmatiņa ar lipekļiem \"Matemātika jautrā veidā\"",
+    "description": "Description for Product 5",
+    "price": "14,99",
+    "imageUrl": "/assets/lellu_garderobe.png",
+    "category": "velcro",
+    "logoUrl": "/assets/category_draw.png",
+    "workingDaysForDelivery": 7
+  },
+  {
+    "id": 6,
+    "name": "Lielā grāmata ar vāka uzlīmēm",
+    "description": "Description for Product 6",
+    "price": "24,99",
+    "imageUrl": "/assets/cards_1.png",
+    "category": "stickers",
+    "logoUrl": "/assets/category_cards.png",
+    "workingDaysForDelivery": 7
+  },
+  {
+    "id": 7,
+    "name": "Zīmēšanas grāmatiņa ar uzlīmēm",
+    "description": "Description for Product 7",
+    "price": "19,99",
+    "imageUrl": "/assets/velcro_big_1.png",
+    "category": "draw",
+    "logoUrl": "/assets/category_velcro.png",
+    "workingDaysForDelivery": 7
+  },
+  {
+    "id": 8,
+    "name": "Kartīšu komplekts \"Atmiņas spēle\"",
+    "description": "Description for Product 8",
+    "price": "34,99",
+    "imageUrl": "/assets/draw_1.png",
+    "category": "cards",
+    "logoUrl": "/assets/category_draw.png",
+    "workingDaysForDelivery": 7
   }
 ]

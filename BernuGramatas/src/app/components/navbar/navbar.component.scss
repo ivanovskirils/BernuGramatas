@@ -15,8 +15,8 @@
   }
 
   img {
-    width: 250px; /* Adjust the width as needed */
-    height: 200px; /* Adjust the height as needed */
+    width: 150px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
     border-radius: 50%; /* Make the image circular */
     overflow: hidden; /* Ensure the image stays within the circular boundary */
   }
@@ -26,8 +26,8 @@
 
 .cart {
   position: relative; /* Ensure the position of the container is relative */
-  width: 44px; /* Set the width */
-  height: 44px; /* Set the height */
+  width: 100px; /* Set the width */
+  height: 100px; /* Set the height */
 }
 
 .cart img {
@@ -37,16 +37,16 @@
 }
 
 .cart .count {
-  position: absolute; /* Position the count absolutely */
-  top: -8px; /* Adjust the top position */
-  right: -8px; /* Adjust the right position */
-  width: 20px; /* Set the width of the count circle */
-  height: 20px; /* Set the height of the count circle */
-  background-color: red; /* Set the background color of the count circle */
-  border-radius: 50%; /* Make the count circle circular */
-  color: white; /* Set the text color */
-  font-size: 12px; /* Set the font size */
-  display: flex; /* Enable flexbox */
-  align-items: center; /* Align items vertically */
-  justify-content: center; /* Align items horizontally */
+  position: absolute;
+  top: 49px;
+  right: 35px;
+  width: 14px;
+  height: 14px;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
