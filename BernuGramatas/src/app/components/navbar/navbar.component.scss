@@ -6,6 +6,7 @@
   align-items: center;
   padding: 10px;
   background-color: transparent;
+  height: 130px;
 }
 
 .logo {
@@ -16,7 +17,7 @@
 
   img {
     width: 150px; /* Adjust the width as needed */
-    height: 100px; /* Adjust the height as needed */
+    height: 237px; /* Adjust the height as needed */
     border-radius: 50%; /* Make the image circular */
     overflow: hidden; /* Ensure the image stays within the circular boundary */
   }
@@ -28,6 +29,13 @@
   position: relative; /* Ensure the position of the container is relative */
   width: 100px; /* Set the width */
   height: 100px; /* Set the height */
+  transition: transform 0.3s ease;
+}
+
+
+.cart:hover {
+  transform: translateY(-5px);
+  opacity: 60%;
 }
 
 .cart img {
