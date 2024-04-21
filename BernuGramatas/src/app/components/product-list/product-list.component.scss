@@ -85,6 +85,12 @@
   text-align: right;
 }
 
+/* Added styles for the button when product is in the cart */
+.product-item button.in-cart {
+  background-color: #36b9cc;
+}
+
+
 @media (max-width: 1200px) {
   .product-list {
     grid-template-columns: repeat(3, 1fr); /* Three products per row */

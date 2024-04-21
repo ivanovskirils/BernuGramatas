@@ -8,7 +8,9 @@
         <p class="vat-info">Ar PVN 5%</p>
       </div>
       <p class="delivery-time">Aptuvenais piegādes datums: {{ product.estimatedDeliveryDate | date:'dd.MM.yyyy' }}</p>
-      <button (click)="addToCart(product)">Pievienot grozam</button>
+      <button (click)="addToCart(product)" [class.in-cart]="product.inCart">
+        {{ product.inCart ? 'Uz grozu' : 'Pievienot grozam' }}
+      </button>
     </div>    
   </div>
 </div>

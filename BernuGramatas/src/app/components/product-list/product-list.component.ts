@@ -23,7 +23,8 @@ export class ProductListComponent implements OnInit {
       this.products = products.map(product => ({
         ...product,
         price: parseFloat(product.price.replace(',', '.')), // Convert price from string to number
-        estimatedDeliveryDate: this.calculateEstimatedDeliveryDate(product.workingDaysForDelivery) // Calculate estimated delivery date
+        estimatedDeliveryDate: this.calculateEstimatedDeliveryDate(product.workingDaysForDelivery), // Calculate estimated delivery date
+        inCart: false // Add property to track whether the product is in the cart
       }));
       console.log('Processed products:', this.products); // Log processed products
       
@@ -47,8 +48,14 @@ export class ProductListComponent implements OnInit {
   }
 
   addToCart(product: any): void {
-    this.cartService.addToCart(product);
-    console.log('Added to cart:', product);
+    if (!product.inCart) {
+      this.cartService.addToCart(product);
+      console.log('Added to cart:', product);
+      product.inCart = true; // Update inCart property
+    } else {
+      // Redirect to the cart page if the product is already in the cart
+      this.router.navigate(['/cart']);
+    }
   }
 
   filterProducts(category: string): void {
@@ -57,8 +64,8 @@ export class ProductListComponent implements OnInit {
 
   isProductInCategory(product: any): boolean {
     return this.selectedCategory ? product.category === this.selectedCategory : true;
-  
   }
+
   calculateEstimatedDeliveryDate(workingDays: number): Date {
     const currentDate = new Date();
     console.log('Current date:', currentDate);
