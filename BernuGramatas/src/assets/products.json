@@ -55,7 +55,7 @@
     "description": "Description for Product 6",
     "price": "24,99",
     "imageUrl": "/assets/cards_1.png",
-    "category": "stickers",
+    "category": "cards",
     "logoUrl": "/assets/category_cards.png",
     "workingDaysForDelivery": 7
   },
@@ -65,7 +65,7 @@
     "description": "Description for Product 7",
     "price": "19,99",
     "imageUrl": "/assets/velcro_big_1.png",
-    "category": "draw",
+    "category": "velcro",
     "logoUrl": "/assets/category_velcro.png",
     "workingDaysForDelivery": 7
   },
@@ -75,7 +75,7 @@
     "description": "Description for Product 8",
     "price": "34,99",
     "imageUrl": "/assets/draw_1.png",
-    "category": "cards",
+    "category": "draw",
     "logoUrl": "/assets/category_draw.png",
     "workingDaysForDelivery": 10
   }

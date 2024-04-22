@@ -11,6 +11,7 @@ import { CartService } from '../../services/cart.service';
 export class ProductListComponent implements OnInit {
   products: any[] = [];
   selectedCategory: string = '';
+  filteredProducts: any[] = []; // Initialize filteredProducts array
 
   constructor(private router: Router, private route: ActivatedRoute, private http: HttpClient, private cartService: CartService) {}
 
@@ -33,14 +34,10 @@ export class ProductListComponent implements OnInit {
         console.log('Route parameters:', params);
         this.selectedCategory = params['category'];
         console.log('Selected category:', this.selectedCategory);
-        if (this.selectedCategory) {
-          this.products = this.products.filter(product => product.category === this.selectedCategory);
-          console.log('Filtered products:', this.products);
-        }
+        this.filterProducts(this.selectedCategory); // Always filter products based on the selected category
       });
     });
   }
-  
 
   viewProductDetails(product: any): void {
     // Navigate to the product details page
@@ -59,8 +56,12 @@ export class ProductListComponent implements OnInit {
   }
 
   filterProducts(category: string): void {
-    this.selectedCategory = category;
-  }  
+    if (category) {
+      this.filteredProducts = this.products.filter(product => product.category === category);
+    } else {
+      this.filteredProducts = this.products; // Show all products when no category is selected
+    }
+  }
 
   isProductInCategory(product: any): boolean {
     return this.selectedCategory ? product.category === this.selectedCategory : true;
@@ -68,8 +69,6 @@ export class ProductListComponent implements OnInit {
 
   calculateEstimatedDeliveryDate(workingDays: number): Date {
     const currentDate = new Date();
-    console.log('Current date:', currentDate);
-  
     let deliveryDate = new Date(currentDate.getTime() + (24 * 60 * 60 * 1000)); // Start from the next day
     let remainingDays = workingDays;
     let skippedWeekend = 0;
@@ -82,9 +81,6 @@ export class ProductListComponent implements OnInit {
         skippedWeekend++;
       }
     }
-  
-    console.log('Estimated delivery date:', deliveryDate);
-    console.log('Skipped weekends:', skippedWeekend);
     return deliveryDate;
   }
 }

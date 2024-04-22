@@ -1,16 +1,18 @@
 <div class="product-list">
-  <div *ngFor="let product of products" class="product-item">
-    <img [src]="product.imageUrl" alt="{{ product.name }}">
-    <div class="product-info">
-      <div class="product-name">{{ product.name }}</div>
-      <div class="price-vat">
-        <p class="price">{{ product.price | currencyFormat }}</p>
-        <p class="vat-info">Ar PVN 5%</p>
+  <div class="centered-product" *ngFor="let product of filteredProducts">
+    <div class="product-item">
+      <img [src]="product.imageUrl" alt="{{ product.name }}">
+      <div class="product-info">
+        <div class="product-name">{{ product.name }}</div>
+        <div class="price-vat">
+          <p class="price">{{ product.price | currencyFormat }}</p>
+          <p class="vat-info">Ar PVN 5%</p>
+        </div>
+        <p class="delivery-time">Aptuvenais piegādes datums: {{ product.estimatedDeliveryDate | date:'dd.MM.yyyy' }}</p>
+        <button (click)="addToCart(product)" [class.in-cart]="product.inCart">
+          {{ product.inCart ? 'Uz grozu' : 'Pievienot grozam' }}
+        </button>
       </div>
-      <p class="delivery-time">Aptuvenais piegādes datums: {{ product.estimatedDeliveryDate | date:'dd.MM.yyyy' }}</p>
-      <button (click)="addToCart(product)" [class.in-cart]="product.inCart">
-        {{ product.inCart ? 'Uz grozu' : 'Pievienot grozam' }}
-      </button>
-    </div>    
+    </div>
   </div>
 </div>
